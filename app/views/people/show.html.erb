@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<div>
+  <h2><%= @person.name %></h2>
+  <div>
+    <%= render partial: "awards/list", locals: { person: @person, awards: @person.awards } %>
+  </div>
+</div>
+  
+
+
